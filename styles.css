@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Beginning */
+
+:root{
+    /* Color Styles */
+    --black: #2e2f31;
+    --gray: #5d5e63;
+    --lt-brown: #665f5e;
+    --blue: #18477f;
+    --md-blue: #3565a1;
+    --lt-blue: #9bd4fb;
+    --lt-green: #78c56c;
+    --md-gray: #bac7cf;
+    --white: #eeeef0;
+    --green: #4e8b44;
+
+    /* Font Style*/
+    --pla-font: "Playfair Display";
+    --not-font: "Noto Sans";
+    --mon-font: "Montserrat";
+
+}
+
+body{
+    font-family: var(--pla-font);
+    width: 100%;
+    line-height: 2;
+    margin: 0rem;
+}
+
+header, footer{
+    max-width: 1440px;
+    padding: 2rem 0rem;
+}
+
+header, main, footer{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: var(--not-font);
+    font-size: 3rem;
+    display: inline-block;
+    margin: 1rem 0rem 1rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+    font-family: var(--fonts);
+    font-weight: 700;
+    color: var(--blue);
+}
+
+h2{
+    font-family: var(--pla-font);
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/* Header Styles */
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--white);
+}
+
+header img{
+    
+    width: 100%;
+}
+
+a{
+    display: block;
+    padding: 0rem;
+    color: var(--blue);
+}
+
+nav{
+    float: right;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 2rem 1rem 2rem 1rem
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration-line: none;
+    margin: 0rem 1rem;
+}
+
+.home{
+    color: var(--gray);
+}
+
+.contact{
+    color: var(--gray);
+}
+
+header img{
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+/* Both Main Styles */
+
+main{
+    margin: 0rem auto;
+    background-color: var(--white);
+}
+
+/* Index Main Styles */
+#reexen{
+    margin: 0rem 2rem;
+    padding: 1rem 1rem 4rem 1rem;
+}
+
+#reexen p{
+    padding: 0rem 20rem;
+    text-align: center;
+}
+
+#gridparent-index{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    background-color: var(--md-blue);
+    color: var(--white);
+}
+
+#group1{
+    margin: 2rem 4rem;
+    padding: 0rem 1rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+#group1 p{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#group1-content{
+    text-align: center;
+}
+
+#group2{
+    margin: 2rem 4rem;
+    padding: 0rem 1rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+#group2 p{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#group2-content{
+    text-align: center;
+}
+
+/* Contact Main Styles */
+
+#contact-main{
+    background-color: var(--md-blue);
+    justify-content: center;
+    color: var(--white);
+}
+
+#contact-main h2{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+#gridparent-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+    justify-items: start;
+    margin: 0rem 3rem;
+    padding: 2rem 19rem;
+}
+
+#group3{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#group3 h2{
+    margin-bottom: 0rem;
+}
+
+#group3 p{
+    padding: 0rem 1.2rem;
+    margin: 0rem;
+}
+
+#marked{
+    font-size: 1.3rem;
+}
+
+#group3 img{
+    width: 100%;
+    max-width: 500px;
+}
+
+#group4{
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 1rem;
+}
+
+#group4 h3{
+    font-size: 1.75rem;
+}
+
+#group4 p{
+    margin: 0.5rem 0rem;
+}
+
+.required svg{
+    display: inline-block;
+    padding-left: 4px;
+    stroke: var(--white);
+    width: 1.5rem;    
+    height: auto;
+}
+
+form{
+    font-family: var(--pla-font);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+label{
+    font-size: 2rem;
+}
+
+legend{
+    font-size: 1rem;
+}
+
+fieldset{
+    border: 4px solid var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+input[type="radio"]{
+    padding: 1rem;
+    margin: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+fieldset label{
+    font-size: 1.5rem;
+}
+
+input, textarea{
+    border: none;
+    background: var(--lt-blue);
+    padding: 0 4px;
+    height: 3rem;
+    color: var(--black);
+    margin-bottom: 24px;
+    font-family: var(--fonts);
+}
+
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#my-submit:hover, #my-submit:focus{
+    background-color: var(--blue);
+    color: var(--white);
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+#my-submit{
+    background-color: var(--lt-blue);
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+textarea{
+    font-size: 1.25rem;
+}
+
+input{
+    font-family: var(--not-font);
+    font-size: 1.25rem;
+}
+
+
+/* Footer styles */
+
+footer{
+    margin: 2rem auto;
+    text-align: center;
+}
